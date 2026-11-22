@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Conversation Folders",
+    "description": "Creates a dedicated subfolder for each new conversation, renames it with the conversation title, hides it when archived, restores it when unarchived, stops its processes and removes the folder when the conversation is deleted, removes empty folders after a turn and recreates them on the next turn, and runs commands through an ASCII junction to avoid non-ASCII path failures.",
+    "detail": "detail/DETAIL.md"
+  }
+}

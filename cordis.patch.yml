@@ -1,0 +1,5 @@
+# dsh-session-folders bundle layer: mount the host plugin.
+- insert:
+    - id: dsh-session-folders
+      name: 'dsh-session-folders'
+      config: {}

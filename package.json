@@ -1,0 +1,44 @@
+{
+  "name": "dsh-session-folders",
+  "version": "0.3.1",
+  "description": "Give every DSH conversation its own workspace subfolder, keep it renamed with the conversation, hide it when archived, clean it up when deleted, remove empty folders after a turn and recreate them on the next turn, and avoid non-ASCII path breakage through an ASCII junction.",
+  "type": "module",
+  "main": "./index.js",
+  "icon": "./icon.svg",
+  "exports": {
+    ".": "./index.js",
+    "./icon": "./icon.svg",
+    "./locale/*.json": "./locale/*.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "icon.svg",
+    "locale/*.json",
+    "detail/*.md",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "manifestVersion": 1
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": ">=4.0.0-rc <5"
+  },
+  "engines": {
+    "node": "^22.15.0 || >=24.0.0"
+  },
+  "author": "Qin Ziang",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qinziang/dsh-session-folders.git"
+  },
+  "homepage": "https://github.com/qinziang/dsh-session-folders#readme",
+  "bugs": {
+    "url": "https://github.com/qinziang/dsh-session-folders/issues"
+  },
+  "license": "MIT"
+}
